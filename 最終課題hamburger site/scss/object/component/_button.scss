@@ -1,0 +1,49 @@
+@use "../../foundation/forward" as *;
+
+.c-button {
+  border: 1px solid $gray;
+  background-color: $whiteGray;
+  border-radius: 10px;
+}
+
+.c-button__menu {
+  position: absolute;
+  top: 0;
+  right: 2%;
+  z-index: 1;
+}
+
+.c-button__card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px 60px 10px;
+  width: 163px;
+  height: 42px;
+  background-color: $white;
+  border-radius: 100px;
+  @include mq(pc) {
+    margin: 60px 75px 60px auto;
+    width: 292px;
+    height: 76px;
+  }
+}
+.c-button__close {
+  position: relative;
+  width: 45.25px;
+  height: 6px;
+  left: 280px;
+  top: 10px;
+  background-color: $gray;
+  rotate: 45deg;
+  &:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: $gray;
+    rotate: 90deg;
+    right: 0;
+    top: 0;
+  }
+}

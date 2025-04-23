@@ -1,0 +1,19 @@
+@use "../foundation/forward" as *;
+
+.l-main {
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
+}
+
+.l-main__card {
+  margin: 30px 20px;
+  width: 335px;
+  @include mq(tab) {
+    margin: 40px;
+    width: 757px;
+  }
+  @include mq(pc) {
+    margin: 60px 100px;
+    width: 1353px;
+  }
+}

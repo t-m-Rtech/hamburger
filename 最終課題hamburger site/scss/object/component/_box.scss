@@ -1,0 +1,55 @@
+@use "../../foundation/forward" as *;
+
+.c-box__article-text {
+  width: 303px;
+  height: 156px;
+  background-color: rgba(#fff, 80%);
+  margin: 0 16px 16px;
+  @include mq(tab) {
+    width: 325px;
+    height: 154px;
+  }
+  @include mq(pc) {
+    width: 584px;
+    height: 161px;
+  }
+}
+.c-box__map01 {
+  height: 691px;
+  width: 375px;
+  background-color: rgba(0, 0, 0, 0.3);
+  @include mq(tab) {
+    width: 834px;
+    height: 415px;
+  }
+  @include mq(pc) {
+    width: 1553px;
+    height: 650px;
+  }
+}
+.c-box__map02 {
+  position: absolute;
+  top: 0;
+  width: inherit;
+  height: 415px;
+  background-color: rgba(0, 0, 0, 0.4);
+  @include mq(tab) {
+    width: inherit;
+    height: inherit;
+  }
+  @include mq(pc) {
+    width: 950px;
+  }
+}
+.c-box__card {
+  width: auto;
+  height: auto;
+  background-color: $background-card;
+  padding: 30px 17px;
+  @include mq(tab) {
+    padding: 30px 46px;
+  }
+  @include mq(pc) {
+    padding: 56px 104px 0 63px;
+  }
+}

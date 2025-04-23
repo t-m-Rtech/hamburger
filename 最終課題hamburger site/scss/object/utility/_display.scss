@@ -1,0 +1,52 @@
+@use "../../foundation/forward" as *;
+
+.u-display__font1 {
+  display: none;
+  @include mq(tab) {
+    display: inline;
+  }
+}
+.u-display__font2 {
+  display: none;
+  @include mq(tab) {
+    display: none;
+  }
+  @include mq(pc) {
+    display: inline;
+  }
+}
+.u-display__font3 {
+  display: none;
+  @include mq(tab) {
+    display: inline;
+  }
+  @include mq(pc) {
+    display: none;
+  }
+}
+.u-display__font4 {
+  display: none;
+  @include mq(tab) {
+    display: none;
+  }
+  @include mq(pc) {
+    display: block;
+  }
+}
+.u-display__none {
+  @include mq(pc) {
+    display: none;
+  }
+}
+.u-display__page1 {
+  display: inline-flex;
+  @include mq(tab) {
+    display: none;
+  }
+}
+.u-display__page2 {
+  display: none;
+  @include mq(tab) {
+    display: inline-flex;
+  }
+}

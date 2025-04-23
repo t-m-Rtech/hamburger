@@ -1,0 +1,10 @@
+@use "../../foundation/forward" as *;
+
+.c-input {
+  &--search {
+    padding-left: 40px;
+    border: 1px solid $gray;
+    background-color: $white;
+    border-radius: 10px;
+  }
+}

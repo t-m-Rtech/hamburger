@@ -1,0 +1,119 @@
+@use "../../foundation/forward" as *;
+
+.p-main__title {
+  display: flex;
+  position: relative;
+  background: url("../../../img/mainvisual-sp.jpg") no-repeat center/cover;
+  width: 375px;
+  height: 285px;
+  @include mq(tab) {
+    background: url("../../../img/mainvisual-tab.jpg") no-repeat center/cover;
+    width: 834px;
+    height: 285px;
+  }
+  @include mq(pc) {
+    background: url("../../../img/mainvisual-pc.jpg") no-repeat center/cover;
+    width: 1553px;
+    height: 530px;
+  }
+}
+
+.p-main__title2 {
+  display: flex;
+  position: relative;
+  background: url("../../../img/page-title_arcive-sp.jpg") no-repeat left/cover;
+  width: 375px;
+  height: 285px;
+  @include mq(tab) {
+    background: url("../../../img/page-title_arcive-tab.jpg") no-repeat
+      center/cover;
+    width: 834px;
+    height: 285px;
+  }
+  @include mq(pc) {
+    background: url("../../../img/page-title_arcive-pc.jpg") no-repeat
+      center/cover;
+    width: 1553px;
+    height: 239px;
+  }
+}
+
+.p-main__title3 {
+  display: flex;
+  position: relative;
+  background: url("../../../img/ham-burger-with-vegetables-sp.jpg") no-repeat
+    center/cover;
+  width: 375px;
+  height: 225px;
+  @include mq(tab) {
+    background: url("../../../img/ham-burger-with-vegetables-tab.jpg") no-repeat
+      center/cover;
+    width: 834px;
+    height: 505px;
+  }
+  @include mq(pc) {
+    background: url("../../../img/ham-burger-with-vegetables-pc.jpg") no-repeat
+      center/cover;
+    width: 1553px;
+    height: 500px;
+  }
+}
+
+.p-main__title4 {
+  display: flex;
+  position: relative;
+  background: url("../../../img/page-title_shop-sp.jpg") no-repeat center/cover;
+  width: 375px;
+  height: 285px;
+  @include mq(tab) {
+    background: url("../../../img/page-title_shop-tab.jpg") no-repeat
+      center/cover;
+    width: 834px;
+    height: 505px;
+  }
+  @include mq(pc) {
+    background: url("../../../img/page-title_shop-pc.jpg") no-repeat
+      center/cover;
+    width: 1553px;
+    height: 500px;
+  }
+}
+
+.p-main__article {
+  display: block;
+  position: relative;
+  width: 335px;
+  height: 642px;
+  margin: 20px;
+  @include mq(tab) {
+    width: 357px;
+    height: 681px;
+    margin: 0px;
+  }
+  @include mq(pc) {
+    width: 616px;
+    height: 1197px;
+  }
+}
+
+.p-main__list {
+  display: grid;
+  gap: 20px;
+  @include mq(tab) {
+    padding-left: 50px;
+  }
+}
+
+.p-main__food {
+  display: grid;
+  gap: 20px;
+  @include mq(tab) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, auto);
+    column-gap: 16px;
+  }
+  @include mq(pc) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+  }
+}

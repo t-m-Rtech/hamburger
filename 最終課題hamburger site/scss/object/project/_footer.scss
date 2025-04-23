@@ -1,0 +1,16 @@
+@use "../../foundation/forward" as *;
+
+.p-footer {
+  display: grid;
+  align-items: center;
+  width: 375px;
+  height: 150px;
+  background-color: $background-footer;
+  grid-row: 3 / 4;
+  @include mq(tab) {
+    width: 834px;
+  }
+  @include mq(pc) {
+    width: 1920px;
+  }
+}

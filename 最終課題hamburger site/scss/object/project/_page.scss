@@ -1,0 +1,34 @@
+@use "../../foundation/forward" as *;
+
+.p-page1 {
+  display: flex;
+  position: relative;
+  top: 70px;
+  width: auto;
+  height: 100px;
+  justify-content: space-between;
+  gap: 15px;
+  @include mq(tab) {
+    justify-content: center;
+    align-items: center;
+    height: 170px;
+  }
+}
+.p-page2 {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  & li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $gray;
+    width: 35px;
+    height: 35px;
+    transition: background-color 0.3s color 0.3s;
+  }
+  & li a:hover {
+    background-color: $background-page;
+    color: $white;
+  }
+}

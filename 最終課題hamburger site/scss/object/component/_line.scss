@@ -1,0 +1,26 @@
+@use "../../foundation/forward" as *;
+
+.c-line {
+  position: relative;
+  &::before {
+    background-color: white;
+    bottom: -15px;
+    content: "";
+    height: 4px;
+    position: absolute;
+    width: 34px;
+    @include mq(tab) {
+      width: 36px;
+    }
+    @include mq(pc) {
+      width: 63px;
+      bottom: -55px;
+    }
+  }
+}
+.c-line__table {
+  & td {
+    border: 1px solid $gray;
+    padding-left: 30px;
+  }
+}

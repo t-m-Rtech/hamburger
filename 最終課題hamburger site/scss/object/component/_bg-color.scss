@@ -1,0 +1,39 @@
+@use "../../foundation/_forward" as *;
+
+.c-bg__body {
+}
+
+.c-bg__sidebar {
+  opacity: 0;
+  transition: opacity 0.3s linear;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  left: 0;
+  z-index: 1;
+  pointer-events: none;
+  @include mq(pc) {
+    pointer-events: none;
+    background-color: transparent;
+    opacity: 1;
+    right: 0;
+    position: relative;
+    width: 0;
+    height: inherit;
+  }
+}
+
+.c-bg__sidebar.is-active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.c-bg__blockquote {
+  background-color: $background-code;
+  width: auto;
+  padding: 30px 20px;
+  @include mq(tab) {
+    padding: 49px;
+  }
+}

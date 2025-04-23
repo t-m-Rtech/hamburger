@@ -1,0 +1,9 @@
+.c-opacity {
+  &::before {
+    content: "";
+    position: absolute;
+    height: inherit;
+    width: inherit;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}

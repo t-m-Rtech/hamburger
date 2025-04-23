@@ -1,0 +1,22 @@
+@use "../../foundation/_forward" as *;
+
+.p-header {
+  position: relative;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  width: 375px;
+  height: 215px;
+  background-color: $background-header;
+  @include mq(tab) {
+    width: 834px;
+    height: 217px;
+  }
+  @include mq(pc) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1553px;
+    height: 217px;
+    padding-left: 3%;
+  }
+}

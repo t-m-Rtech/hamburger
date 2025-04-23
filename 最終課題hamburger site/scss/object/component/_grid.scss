@@ -1,0 +1,23 @@
+@use "../../foundation/_mixin" as *;
+
+.c-grid {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 215px 1fr 150px;
+  grid-template-columns: 375px;
+  @include mq(tab) {
+    grid-template-rows: 217px 1fr 150px;
+    grid-template-columns: 834px;
+  }
+  @include mq(pc) {
+    grid-template-columns: 1553px 368px;
+  }
+}
+
+.c-grid__gap {
+  display: grid;
+  gap: 20px;
+  @include mq(pc) {
+    gap: 30px;
+  }
+}

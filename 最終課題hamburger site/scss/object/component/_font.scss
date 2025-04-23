@@ -1,0 +1,273 @@
+@use "../../foundation/forward" as *;
+
+.c-font__header {
+  h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 35px;
+    position: relative;
+    @include font(40);
+    font-weight: 700;
+    font-family: "Roboto";
+    color: $gray;
+    @include mq(pc) {
+      @include font(64);
+      top: 0;
+    }
+  }
+}
+
+.c-font__search {
+  @include font(16);
+  font-weight: 700;
+}
+
+.c-font__main-Toptitle {
+  h1 {
+    @include font(36);
+    font-weight: 700;
+    color: $white;
+    position: absolute;
+    top: 50%;
+    transform: translate(10%, -50%);
+    @include mq(tab) {
+      padding-left: 4%;
+    }
+    @include mq(pc) {
+      @include font(40);
+    }
+  }
+}
+
+.c-font__main-Toptitle2 {
+  h1 {
+    @include font(36);
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    color: $white;
+    position: absolute;
+    top: 50%;
+    transform: translate(10%, -50%);
+    margin-left: 20px;
+  }
+  p {
+    @include font(16);
+    font-weight: 700;
+    color: $white;
+  }
+  @include mq(tab) {
+    h1 {
+      @include font(60);
+      display: flex;
+      align-items: center;
+      transform: translate(20%, -50%);
+    }
+    p {
+      margin-left: 20px;
+    }
+  }
+}
+
+.c-font__main-Toptitle3 {
+  h1 {
+    @include font(36);
+    font-weight: 700;
+    color: $white;
+    position: absolute;
+    top: 50%;
+    transform: translate(10%, -50%);
+    @include mq(tab) {
+      @include font(60);
+      margin-left: 40px;
+    }
+  }
+}
+
+.c-font__article-title {
+  h2 {
+    position: absolute;
+    top: 0;
+    @include font(41);
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+    color: $whiteGray;
+    margin: 13px auto auto 15px;
+    @include mq(tab) {
+      @include font(44);
+    }
+    @include mq(pc) {
+      @include font(80);
+    }
+  }
+}
+.c-font__article-text {
+  h3 {
+    @include font(22);
+    font-weight: 700;
+    padding-top: 6px;
+    padding-left: 16px;
+    position: absolute;
+  }
+  p {
+    @include font(16);
+
+    margin: 48px 16px 16px 16px;
+    position: absolute;
+    padding-right: 16px;
+    line-height: 24px;
+  }
+  @include mq(tab) {
+    h3 {
+      @include font(24);
+    }
+    p {
+      @include font(14);
+    }
+  }
+  @include mq(pc) {
+    p {
+      @include font(16);
+    }
+  }
+}
+
+.c-font__map {
+  align-items: center;
+  h2 {
+    @include font(30);
+    font-weight: 700;
+    color: $white;
+    margin: 40px auto auto 40px;
+  }
+  p {
+    color: $white;
+    font-weight: 700;
+    line-height: 33px;
+    margin: 30px 40px 60px;
+    @include mq(tab) {
+      margin: 30px 33px 60px;
+    }
+  }
+  @include mq(pc) {
+    h2 {
+      @include font(36);
+      margin: 86px auto auto 119px;
+    }
+    p {
+      @include font(16);
+      margin: 109px 134px 75px 119px;
+    }
+  }
+}
+
+.c-font__footer {
+  @include font(18);
+  color: $white;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  @include mq(tab) {
+    @include font(20);
+  }
+}
+
+.c-font__copyright {
+  display: flex;
+  justify-content: center;
+  color: $white;
+}
+.c-font__komidasi {
+  h2 {
+    @include font(28);
+    font-weight: 700;
+  }
+  p {
+    @include font(16);
+    margin: 3% 0 6%;
+  }
+  h3 {
+    @include font(24);
+  }
+  h4,
+  h5,
+  h6 {
+    @include font(20);
+  }
+  @include mq(tab) {
+    h2 {
+      @include font(36);
+    }
+  }
+}
+
+.c-font__button {
+  @include font(16);
+  font-weight: 700;
+  color: $gray;
+}
+
+.c-font__card {
+  h3 {
+    @include font(20);
+    font-weight: 700;
+    color: $white;
+    margin-bottom: 8%;
+  }
+  h4 {
+    @include font(16);
+    font-weight: 700;
+    color: $white;
+    margin-bottom: 3%;
+  }
+  p {
+    @include font(16);
+    color: $white;
+  }
+  @include mq(pc) {
+    h3 {
+      @include font(36);
+    }
+    h4 {
+      @include font(24);
+    }
+  }
+}
+
+.c-font__foot-page {
+  @include font(16);
+  color: $gray;
+  @include mq(tab) {
+    font-weight: 700;
+    font-family: "Robot";
+  }
+}
+
+.c-font__menu {
+  @include font(20);
+  font-family: "Roboto";
+  font-weight: 700;
+  color: $gray;
+  @include mq(tab) {
+    @include font(34);
+  }
+}
+
+.c-font__sidebar {
+  @include font(24);
+  font-weight: 700;
+  color: $gray;
+  &__item {
+    @include font(20);
+    font-weight: 400;
+  }
+}
+.c-font__bold {
+  @include font(16);
+  font-weight: 700;
+  margin-bottom: 15%;
+}
+
+.c-font__food-text {
+  @include font(16);
+}

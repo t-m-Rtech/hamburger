@@ -1,0 +1,11 @@
+@use "../../foundation/forward" as *;
+.u-font-color__white {
+  h2 {
+    color: $white;
+  }
+}
+
+.u-page-color {
+  background-color: $background-page;
+  color: $white;
+}

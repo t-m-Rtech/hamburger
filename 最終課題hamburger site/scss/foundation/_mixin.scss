@@ -1,0 +1,17 @@
+// font
+@mixin font($size) {
+  font-size: calc($size / 16 * 1rem);
+}
+
+// breakpoint
+$breakpoint: (
+  sp: "screen and(max-width:600px)",
+  tab: "screen and(min-width:834px)",
+  pc: "screen and(min-width:1120px)",
+);
+
+@mixin mq($bp) {
+  @media #{map-get($breakpoint,$bp)} {
+    @content;
+  }
+}

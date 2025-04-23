@@ -1,0 +1,25 @@
+@use "../../foundation/forward" as *;
+
+.p-card {
+  width: 336px;
+  height: auto;
+  @include mq(tab) {
+    display: flex;
+    height: auto;
+    width: 756px;
+  }
+  @include mq(pc) {
+    height: 471px;
+    width: 1353px;
+  }
+}
+.p-card__food {
+  display: flex;
+  gap: 10px;
+  @include mq(tab) {
+    gap: 20px;
+  }
+  @include mq(pc) {
+    gap: 40px;
+  }
+}

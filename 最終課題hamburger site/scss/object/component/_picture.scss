@@ -1,0 +1,90 @@
+@use "../../foundation/forward" as *;
+
+.c-picture__article {
+  @include mq(tab) {
+    min-width: 357px;
+    height: 681px;
+  }
+  @include mq(pc) {
+    width: 616px;
+    height: 1197px;
+  }
+}
+
+.c-picture__map {
+  background: url("../../../img/map.jpg") no-repeat;
+  max-width: 375px;
+  height: auto;
+  @include mq(tab) {
+    background: url("../../../img/map-pc.jpg") no-repeat;
+    background-size: 120%;
+    max-width: 834px;
+  }
+  @include mq(pc) {
+    background-size: 100%;
+    max-width: 1553px;
+  }
+}
+
+.c-picture__card {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  @include mq(tab) {
+    width: 378px;
+  }
+  @include mq(pc) {
+    width: 677px;
+  }
+}
+
+.c-picture__top {
+  object-fit: cover;
+  object-position: top left;
+  @include mq(pc) {
+    height: 239px;
+    width: 1553px;
+    object-position: center;
+  }
+}
+
+.c-picture__food {
+  height: 124px;
+  width: 335px;
+  object-fit: cover;
+  object-position: bottom;
+  @include mq(tab) {
+    width: 714px;
+    height: 264px;
+  }
+  @include mq(pc) {
+    width: 1353px;
+    height: 500px;
+  }
+}
+.c-picture__food2 {
+  width: 144px;
+  height: 89px;
+  @include mq(tab) {
+    width: 306px;
+    height: 189px;
+  }
+  @include mq(pc) {
+    width: 581px;
+    height: 358px;
+  }
+}
+.c-picture__food3 {
+  height: 166px;
+  width: 267px;
+  margin: auto;
+  @include mq(tab) {
+    width: 581px;
+    height: 358px;
+    margin-bottom: 180px;
+  }
+  @include mq(pc) {
+    margin: auto;
+  }
+}

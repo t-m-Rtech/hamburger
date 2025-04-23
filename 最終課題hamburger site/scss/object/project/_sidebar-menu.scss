@@ -1,0 +1,23 @@
+@use "../../foundation/forward" as *;
+
+.p-sidebar {
+  transform: translateX(100vw);
+  transition: all 0.3s linear;
+  position: fixed;
+  overflow-y: scroll;
+  width: 328px;
+  height: inherit;
+  right: 0;
+  background-color: $background-sidebar;
+  z-index: 2;
+  @include mq(pc) {
+    transform: none;
+    width: 368px;
+    height: inherit;
+    background-color: $background-sidebar;
+    position: relative;
+  }
+}
+.p-sidebar.is-active {
+  transform: translateX(0);
+}
